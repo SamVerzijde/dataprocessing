@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/product.schema.json",
+  "title": "JSON Schema",
+  "description": "JSON Schema for Minecraft datasets",
+  "type": "object",
+  "properties": {
+    "ore": {
+      "description": "The unique identifier for a product",
+      "type": "integer"
+    },
+    "tool": {
+      "description": "The unique identifier for a product",
+      "type": "integer"
+    },
+    "abundance": {
+      "description": "The unique identifier for a product",
+      "type": "integer"
+    },
+    "biome": {
+      "description": "The unique identifier for a product",
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "The unique identifier for a product",
+              "type": "integer"
+            },
+            "rarity": {
+              "description": "The unique identifier for a product",
+              "type": "integer"
+            },
+            "temperature": {
+              "description": "The unique identifier for a product",
+              "type": "integer"
+            },
+            "type": {
+              "description": "The unique identifier for a product",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "name",
+            "rarity",
+            "temperature",
+            "type"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "ore",
+    "tool",
+    "abundance"
+  ]
+}

@@ -1,21 +1,21 @@
 block;biome;renewable;tool;flammable;breaking_time
-grass_block;plains;1;wooden;0;0.9
-ice;ice_spikes;1;stone;0;0.75
-dirt;forest;1;wooden;0;0.75
-snow;snowy_tundra;1;wooden;0;0.5
+grass_block;taiga, plains, forest, birch_forest, dark_forest;1;wooden;0;0.9
+ice;snowy_tundra, ice_spikes;1;stone;0;0.75
+dirt;taiga, plains, forest, birch_forest, dark_forest, swamp, jungle;1;wooden;0;0.75
+snow;snowy_tunda, ice_spikes;1;wooden;0;0.5
 oak_log;forest;1;iron;1;3
 oak_leaves;forest;1;wooden;1;0.3
-stone;mountains;1;diamond;0;7.5
+stone;snowy_tundra, mountains;1;diamond;0;7.5
 emerald;mountains;0;diamond;0;15
-bee_nest;birch_forest;1;iron;1;0.45
-clay;desert;1;stone;0;0.9
+bee_nest;jungle;1;iron;1;0.45
+clay;beach;1;stone;0;0.9
 cocoa;jungle;1;wooden;0;0.3
 jungle_log;jungle;1;iron;1;3
-sand;beach;1;wooden;0;0.75
-gravel;taiga;1;stone;0;0.9
-cactus;savanna;1;wooden;0;0.6
+sand;beach, desert, savanna, badlands, swamp;1;wooden;0;0.75
+gravel;snowy_tundra, mountains, swamp, beach, savanna;1;stone;0;0.9
+cactus;desert, savanna, badlands;1;wooden;0;0.6
 acacia_log;dark_forest;1;iron;1;3
 red_sand;badlands;1;wooden;0;0.75
-gold;mountains;0;diamond;0;15
+gold;desert;0;diamond;0;15
 netherrack;nether;0;iron;0;2
 nether_quartz_ore;nether;0;iron;0;15
