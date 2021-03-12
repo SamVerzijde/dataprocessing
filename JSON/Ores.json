@@ -1,0 +1,102 @@
+[
+  {
+    "ore": "coal",
+    "tool": "wooden",
+    "abundance": "very_common",
+    "biome": "taiga",
+    "most_found_in_layers": "5_32",
+    "none_at_or_above": 132,
+    "rare_on_layers": "129_131",
+    "commonly_up_to_layers": 128
+  },
+  {
+    "ore": "iron",
+    "tool": "stone",
+    "abundance": "common",
+    "biome": "plains",
+    "most_found_in_layers": "5_54",
+    "none_at_or_above": 64,
+    "rare_on_layers": "62_63",
+    "commonly_up_to_layers": 62
+  },
+  {
+    "ore": "lapis_lazuli",
+    "tool": "stone",
+    "abundance": "rare",
+    "biome": "forest",
+    "most_found_in_layers": "13_17",
+    "none_at_or_above": 34,
+    "rare_on_layers": "31_33",
+    "commonly_up_to_layers": 23
+  },
+  {
+    "ore": "gold",
+    "tool": "iron",
+    "abundance": "uncommon",
+    "biome": "savanna",
+    "most_found_in_layers": "5_29",
+    "none_at_or_above": 34,
+    "rare_on_layers": "31_33",
+    "commonly_up_to_layers": 29
+  },
+  {
+    "ore": "redstone",
+    "tool": "iron",
+    "abundance": "uncommon",
+    "biome": "dark_forest",
+    "most_found_in_layers": "5_12",
+    "none_at_or_above": 16,
+    "rare_on_layers": "13_15",
+    "commonly_up_to_layers": 12
+  },
+  {
+    "ore": "diamond",
+    "tool": "iron",
+    "abundance": "rare",
+    "biome": "swamp",
+    "most_found_in_layers": "5_12",
+    "none_at_or_above": 16,
+    "rare_on_layers": "13_15",
+    "commonly_up_to_layers": 12
+  },
+  {
+    "ore": "emerald",
+    "tool": "iron",
+    "abundance": "very_rare",
+    "biome": "mountains",
+    "most_found_in_layers": "5_29",
+    "none_at_or_above": 33,
+    "rare_on_layers": "30_32",
+    "commonly_up_to_layers": 29
+  },
+  {
+    "ore": "nether_quartz",
+    "tool": "wooden",
+    "abundance": "very_common",
+    "biome": "nether",
+    "most_found_in_layers": "10_114",
+    "none_at_or_above": 128,
+    "rare_on_layers": "123_125",
+    "commonly_up_to_layers": 120
+  },
+  {
+    "ore": "nether_gold",
+    "tool": "wooden",
+    "abundance": "common",
+    "biome": "nether",
+    "most_found_in_layers": 15,
+    "none_at_or_above": 117,
+    "rare_on_layers": "96_116",
+    "commonly_up_to_layers": 95
+  },
+  {
+    "ore": "ancient_debris",
+    "tool": "diamond",
+    "abundance": "very_rare",
+    "biome": "nether",
+    "most_found_in_layers": "13_17",
+    "none_at_or_above": 120,
+    "rare_on_layers": "22_119",
+    "commonly_up_to_layers": 23
+  }
+]

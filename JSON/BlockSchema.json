@@ -1,0 +1,629 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/product.schema.json",
+  "title": "Blocks",
+  "description": "Blocks in Minecraft",
+  "type": "object",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "double"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "double"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "double"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "double"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "double"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "double"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "double"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "double"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "double"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "double"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "double"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "double"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "double"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "biome": {
+          "type": "string"
+        },
+        "renewable": {
+          "type": "integer"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "flammable": {
+          "type": "integer"
+        },
+        "breaking_time": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "block",
+        "biome",
+        "renewable",
+        "tool",
+        "flammable",
+        "breaking_time"
+      ]
+    }
+  ]
+}
