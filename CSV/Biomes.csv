@@ -1,0 +1,16 @@
+biome;rarity;temperature;type
+snowy_tundra;uncommon;0.0;snowy_icy
+ice_spikes;rare;0.0;snowy_icy
+mountains;common;0.2;cold
+taiga;common;0.25;cold
+plains;common;0.8;temperate_lush
+forest;common;0.7;temperate_lush
+birch_forest;common;0.6;temperate_lush
+dark_forest;common;0.7;medium_mild
+swamp;common;0.8;medium_mild
+jungle;rare;0.95;medium_lush
+beach;common;0.8;medium_lush
+desert;common;2.0;dry_warm
+savanna;common;1.2;dry_warm
+badlands;rare;2.0;dry_warm
+nether;common;2.0;nether

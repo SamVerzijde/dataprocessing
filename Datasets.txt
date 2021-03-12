@@ -1,0 +1,10 @@
+https://www.kaggle.com/sidtwr/videogames-sales-dataset?select=Video_Games_Sales_as_at_22_Dec_2016.csv
+
+
+- Blocks
+https://minecraft.gamepedia.com/Block#List_of_blocks
+
+- Ores
+https://minecraft.gamepedia.com/Ore#Availability
+
+- Biomes

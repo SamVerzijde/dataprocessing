@@ -1,0 +1,354 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "Biomes",
+    "description": "Biomes in Minecraft",
+    "type": "object",
+    "items": [
+        {
+            "type": "object",
+            "properties": {
+                "biome": {
+                    "type": "string"
+                },
+                "rarity": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "double"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "biome",
+                "rarity",
+                "temperature",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "biome": {
+                    "type": "string"
+                },
+                "rarity": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "double"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "biome",
+                "rarity",
+                "temperature",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "biome": {
+                    "type": "string"
+                },
+                "rarity": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "double"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "biome",
+                "rarity",
+                "temperature",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "biome": {
+                    "type": "string"
+                },
+                "rarity": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "double"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "biome",
+                "rarity",
+                "temperature",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "biome": {
+                    "type": "string"
+                },
+                "rarity": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "double"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "biome",
+                "rarity",
+                "temperature",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "biome": {
+                    "type": "string"
+                },
+                "rarity": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "double"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "biome",
+                "rarity",
+                "temperature",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "biome": {
+                    "type": "string"
+                },
+                "rarity": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "double"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "biome",
+                "rarity",
+                "temperature",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "biome": {
+                    "type": "string"
+                },
+                "rarity": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "double"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "biome",
+                "rarity",
+                "temperature",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "biome": {
+                    "type": "string"
+                },
+                "rarity": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "double"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "biome",
+                "rarity",
+                "temperature",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "biome": {
+                    "type": "string"
+                },
+                "rarity": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "double"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "biome",
+                "rarity",
+                "temperature",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "biome": {
+                    "type": "string"
+                },
+                "rarity": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "double"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "biome",
+                "rarity",
+                "temperature",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "biome": {
+                    "type": "string"
+                },
+                "rarity": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "double"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "biome",
+                "rarity",
+                "temperature",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "biome": {
+                    "type": "string"
+                },
+                "rarity": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "double"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "biome",
+                "rarity",
+                "temperature",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "biome": {
+                    "type": "string"
+                },
+                "rarity": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "double"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "biome",
+                "rarity",
+                "temperature",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "biome": {
+                    "type": "string"
+                },
+                "rarity": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "double"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "biome",
+                "rarity",
+                "temperature",
+                "type"
+            ]
+        }
+    ]
+}
