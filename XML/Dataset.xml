@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <row>
+        <ore>coal</ore>
+        <tool>wooden</tool>
+        <abundance>very_common</abundance>
+        <biome>
+            <name>taiga</name>
+            <rarity>common</rarity>
+            <temperature>0.25</temperature>
+            <type>cold</type>
+            <blocks_biome>grass_block</blocks_biome>
+            <blocks_biome>dirt</blocks_biome>
+            <blocks>
+                <name>grass_block</name>
+                <biome>taiga, plains, forest, birch_forest, dark_forest</biome>
+                <renewable>1</renewable>
+                <tool>wooden</tool>
+                <flammable>0</flammable>
+                <breaking_time>0.9</breaking_time>
+            </blocks>
+            <blocks>
+                <name>dirt</name>
+                <biome>taiga, plains, forest, birch_forest, dark_forest, swamp, jungle</biome>
+                <renewable>1</renewable>
+                <tool>wooden</tool>
+                <flammable>0</flammable>
+                <breaking_time>0.75</breaking_time>
+            </blocks>
+        </biome>
+        <most_found_in_layers>5_32</most_found_in_layers>
+        <none_at_or_above>132</none_at_or_above>
+        <rare_on_layers>129_131</rare_on_layers>
+        <commonly_up_to_layers>128</commonly_up_to_layers>
+    </row>
+</root>
