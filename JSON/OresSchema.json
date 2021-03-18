@@ -3,7 +3,7 @@
   "$id": "https://example.com/product.schema.json",
   "title": "JSON Schema",
   "description": "JSON Schema for Minecraft datasets",
-  "type": "object",
+  "type": "array",
   "properties": {
     "ore": {
       "description": "The unique identifier for a product",
@@ -39,6 +39,28 @@
             "type": {
               "description": "The unique identifier for a product",
               "type": "integer"
+            },
+            "blocks_biome": {
+              "description": "The unique identifier for a product",
+              "type": "array",
+              "items": [
+                {
+                  "name": "grass_block",
+                  "biome": "taiga, plains, forest, birch_forest, dark_forest",
+                  "renewable": 1,
+                  "tool": "wooden",
+                  "flammable": 0,
+                  "breaking_time": 0.9
+                },
+                {
+                  "name": "dirt",
+                  "biome": "taiga, plains, forest, birch_forest, dark_forest, swamp, jungle",
+                  "renewable": 1,
+                  "tool": "wooden",
+                  "flammable": 0,
+                  "breaking_time": 0.75
+                }
+              ]
             }
           },
           "required": [
