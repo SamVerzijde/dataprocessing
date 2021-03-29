@@ -1,0 +1,6 @@
+wat je dus eigenlijk per tabel standaard hebt is het volgende:
+GET /superheroes -> geeft een lijst terug van superheroes
+GET /superheroes/1 -> geeft de superheroe met ID = 1 terug
+POST /superheroes -> aanmaken van een nieuwe superhero
+DELETE /superheroes/1 -> verwijderen van een superhero
+PUT/PATCH /superheroes/1 -> bijwerken van een superhero
