@@ -92,4 +92,24 @@ $app->group('/biome', function (RouteCollectorProxy $group) {
         $response->getBody()->write("Staat er in maat");
         return $response;
     });
+    $group->post('', function ($request, $response, $args) {
+        require_once('dbconnect.php');
+        
+        $parsedbody = $request->getParsedBody();
+
+        var_dump($parsedbody);
+        $biome = $parsedbody['biome'];
+        $rarity = $parsedbody['rarity'];
+        $temperature = $parsedbody['temperature'];
+        $type = $parsedbody['type'];
+        $blocks = $parsedbody['blocks'];
+
+        $query = "INSERT INTO biome (biome, rarity, temperature, type, blocks) VALUES 
+            ('$biome', '$rarity', '$temperature', '$type', '$blocks')";
+
+        $mysqli->query($query);
+
+        $response->getBody()->write("Nieuwe row is aangemaakt");
+        return $response;
+    });
 });

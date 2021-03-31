@@ -66,4 +66,53 @@ $app->group('/block', function (RouteCollectorProxy $group) {
         $response->getBody()->write("Doei");
         return $response;
     });
+    $group->put('/{id}', function ($request, $response, $args) {
+        require_once('dbconnect.php');
+        
+        $parsedbody = $request->getParsedBody();
+
+        $id = $request->getAttribute('id');
+        var_dump($parsedbody);
+        $block = $parsedbody['block'];
+        $biome = $parsedbody['biome'];
+        $renewable = $parsedbody['renewable'];
+        $tool = $parsedbody['tool'];
+        $flammable = $parsedbody['flammable'];
+        $breaking_time = $parsedbody['breaking_time'];
+
+        $query = "UPDATE block SET 
+            block = '$block', 
+            biome = '$biome', 
+            renewable = '$renewable', 
+            tool = '$tool', 
+            flammable = '$flammable',
+            breaking_time = '$breaking_time'
+            WHERE id = '$id'";
+
+        $mysqli->query($query);
+
+        $response->getBody()->write("Staat er in maat");
+        return $response;
+    });
+    $group->post('', function ($request, $response, $args) {
+        require_once('dbconnect.php');
+        
+        $parsedbody = $request->getParsedBody();
+
+        var_dump($parsedbody);
+        $block = $parsedbody['block'];
+        $biome = $parsedbody['biome'];
+        $renewable = $parsedbody['renewable'];
+        $tool = $parsedbody['tool'];
+        $flammable = $parsedbody['flammable'];
+        $breaking_time = $parsedbody['breaking_time'];
+
+        $query = "INSERT INTO block (block, biome, renewable, tool, flammable, breaking_time) VALUES 
+            ('$block', '$biome', '$renewable', '$tool', '$flammable', '$breaking_time')";
+
+        $mysqli->query($query);
+
+        $response->getBody()->write("Nieuwe row is aangemaakt");
+        return $response;
+    });
 });
