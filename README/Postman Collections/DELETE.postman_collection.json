@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "53da5e7e-2571-412b-80cd-bc07e626f2dd",
+		"name": "DELETE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ore",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "api/ore/13",
+					"host": [
+						"api"
+					],
+					"path": [
+						"ore",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Block",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "api/block/23",
+					"host": [
+						"api"
+					],
+					"path": [
+						"block",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Biome",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "api/biome/17",
+					"host": [
+						"api"
+					],
+					"path": [
+						"biome",
+						"17"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

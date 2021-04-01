@@ -30,8 +30,10 @@ $app->group('/ore', function (RouteCollectorProxy $group) {
 
         $query = "select * from ore";
         $result = $mysqli->query($query);
+        $rowsAmount   = mysqli_num_rows($result);
+
         $x = 0;
-        while ($x <= 10) {
+        while ($x < $rowsAmount) {
             $data[] = $result->fetch_assoc();
             $x++;
         };

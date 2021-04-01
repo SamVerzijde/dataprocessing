@@ -30,8 +30,10 @@ $app->group('/biome', function (RouteCollectorProxy $group) {
 
         $query = "select * from biome";
         $result = $mysqli->query($query);
+        $rowsAmount   = mysqli_num_rows($result);
+
         $x = 0;
-        while ($x <= 15) {
+        while ($x < $rowsAmount) {
             $data[] = $result->fetch_assoc();
             $x++;
         };
@@ -68,7 +70,7 @@ $app->group('/biome', function (RouteCollectorProxy $group) {
     });
     $group->put('/{id}', function ($request, $response, $args) {
         require_once('dbconnect.php');
-        
+
         $parsedbody = $request->getParsedBody();
 
         $id = $request->getAttribute('id');
@@ -94,7 +96,7 @@ $app->group('/biome', function (RouteCollectorProxy $group) {
     });
     $group->post('', function ($request, $response, $args) {
         require_once('dbconnect.php');
-        
+
         $parsedbody = $request->getParsedBody();
 
         var_dump($parsedbody);

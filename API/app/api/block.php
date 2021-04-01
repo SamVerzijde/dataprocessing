@@ -30,8 +30,10 @@ $app->group('/block', function (RouteCollectorProxy $group) {
 
         $query = "select * from block";
         $result = $mysqli->query($query);
+        $rowsAmount   = mysqli_num_rows($result);
+
         $x = 0;
-        while ($x <= 20) {
+        while ($x < $rowsAmount) {
             $data[] = $result->fetch_assoc();
             $x++;
         };

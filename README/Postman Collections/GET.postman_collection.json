@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "4eec7b95-0ee6-4ec8-aee6-29e371d64864",
+		"name": "GET",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Biome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api/biome",
+					"host": [
+						"api"
+					],
+					"path": [
+						"biome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Biome/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api/biome/4",
+					"host": [
+						"api"
+					],
+					"path": [
+						"biome",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Block",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api/block",
+					"host": [
+						"api"
+					],
+					"path": [
+						"block"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Block/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api/block/4",
+					"host": [
+						"api"
+					],
+					"path": [
+						"block",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ore",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api/ore",
+					"host": [
+						"api"
+					],
+					"path": [
+						"ore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ore/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api/ore/4",
+					"host": [
+						"api"
+					],
+					"path": [
+						"ore",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
