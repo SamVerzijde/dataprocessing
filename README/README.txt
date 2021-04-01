@@ -1,3 +1,11 @@
+Benodigde Software:
+- Code editor die PHP ondersteund
+- Postman
+- XAMPP
+- MySQL Versie 10.4.17-MariaDB
+- PHP Versie 8.07
+
+Stappenplan:
 1. Pull de Github zodat alle laatste bestanden aanwezig zijn in: "C:\xampp\htdocs\dataprocessing"
 
 2. Om het SlimFramework werkend te krijgen is er een tweetal aanpassingen nodig aan bestanden.
