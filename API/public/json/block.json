@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "block": {
+            "type": "string"
+        },
+        "biome": {
+            "type": "string"
+        },
+        "renewable": {
+            "type": "number"
+        },
+        "tool": {
+            "type": "string"
+        },
+        "flammable": {
+            "type": "number"
+        },
+        "breaking_time": {
+            "type": "number"
+        }
+    },
+    "required": [
+      "block",
+      "biome",
+      "renewable",
+      "tool",
+      "flammable",
+      "breaking_time"
+    ]
+}

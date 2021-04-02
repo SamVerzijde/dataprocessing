@@ -1,0 +1,391 @@
+{
+	"info": {
+		"_postman_id": "33e09f8b-d669-4d6f-aec9-4881d3fa4d42",
+		"name": "Dataprocessing",
+		"description": "# Introduction\nDeze API verzocht een connectie tussen de database \"Minecraft\" en een visuele applicatie. Via de API kunnen er requests gedaan worden die uitgevoerd worden middels PHP code.\n\n# Overview\nDeze API is gemaakt met PHP. De input en output kan zowel gegenereerd worden in XML als JSON, dit kan binnen Postman aangegeven worden als Content-Type application/xml of application/json.\n\n# Authentication\nVia Postman kan de API requests verwerken. Dit is de primaire manier voor het gebruiken van deze API. Er wordt nog gewerkt aan een applicatie met GUI die de API kan verwerken.\n\n# Error Codes\nGeen Content-Type geselecteerd. API gaat naar \"ELSE\" statement, geeft terug \"Hier is niks te vinden\".\n\nEen verkeerd ID ingevuld bij het gebruiken van de API. De API geeft geen resultaten weer omdat dit ID niet bestaat in de Database.\n\nEen verkeerde Datatype meegegeven in de Body van Postman. De code vergelijkt de Datatypes die meegegeven zijn via de Body van Postman. Als de Datatype niet klopt met het validatie schema wordt de request geweigerd.\n\n# Rate limit\nEr is op dit moment geen limiet van het aantal requests dat verzonden kan worden bekend.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ore",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "api/ore/13",
+					"host": [
+						"api"
+					],
+					"path": [
+						"ore",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Block",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "api/block/23",
+					"host": [
+						"api"
+					],
+					"path": [
+						"block",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Biome",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "api/biome/40",
+					"host": [
+						"api"
+					],
+					"path": [
+						"biome",
+						"40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Biome",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "api/biome",
+					"host": [
+						"api"
+					],
+					"path": [
+						"biome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Biome/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "api/biome/4",
+					"host": [
+						"api"
+					],
+					"path": [
+						"biome",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Block",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "api/block",
+					"host": [
+						"api"
+					],
+					"path": [
+						"block"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Block/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "api/block/4",
+					"host": [
+						"api"
+					],
+					"path": [
+						"block",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ore",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "api/ore",
+					"host": [
+						"api"
+					],
+					"path": [
+						"ore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ore/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "api/ore/4",
+					"host": [
+						"api"
+					],
+					"path": [
+						"ore",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Biome",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<root>\r\n   <biome>desert</biome>\r\n   <blocks>sand, cactus, gold</blocks>\r\n   <rarity>common</rarity>\r\n   <temperature>3</temperature>\r\n   <type>dry_warm</type>\r\n</root>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "api/biome",
+					"host": [
+						"api"
+					],
+					"path": [
+						"biome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Block",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"block\":\"dirt\",\r\n    \"biome\":\"taiga, plains, forest\",\r\n    \"renewable\":0,\r\n    \"tool\":\"wooden\",\r\n    \"flammable\":0,\r\n    \"breaking_time\":0.75\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api/block",
+					"host": [
+						"api"
+					],
+					"path": [
+						"block"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ore",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ore\":\"lapis_lazuli\",\r\n    \"tool\":\"stone\",\r\n    \"abundance\":\"rare\",\r\n    \"biome\":\"forest\",\r\n    \"most_found_in_layers\":\"13_17\",\r\n    \"none_at_or_above\":34,\r\n    \"rare_on_layers\":\"31_33\",\r\n    \"commonly_up_to_layers\":23\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api/ore",
+					"host": [
+						"api"
+					],
+					"path": [
+						"ore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Biome",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"biome\":\"woestijn\",\r\n    \"rarity\":\"common\",\r\n    \"temperature\":3,\r\n    \"type\":\"dry_warm\",\r\n    \"blocks\":\"sand, cactus, gold\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api/biome/5",
+					"host": [
+						"api"
+					],
+					"path": [
+						"biome",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Block",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"block\":\"zand\",\r\n    \"biome\":\"taiga, plains, forest\",\r\n    \"renewable\":0,\r\n    \"tool\":\"wooden\",\r\n    \"flammable\":0,\r\n    \"breaking_time\":0.75\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api/block/6",
+					"host": [
+						"api"
+					],
+					"path": [
+						"block",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ore",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ore\":\"lapis\",\r\n    \"tool\":\"stone\",\r\n    \"abundance\":\"rare\",\r\n    \"biome\":\"forest\",\r\n    \"most_found_in_layers\":\"13_17\",\r\n    \"none_at_or_above\":34,\r\n    \"rare_on_layers\":\"31_33\",\r\n    \"commonly_up_to_layers\":23\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api/ore/7",
+					"host": [
+						"api"
+					],
+					"path": [
+						"ore",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

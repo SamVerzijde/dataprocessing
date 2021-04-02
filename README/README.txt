@@ -28,3 +28,5 @@ Collection "PUT" kijkt net als "POST" naar de inhoud van de "body" van Postman, 
 De row met het corresponderende "ID" wordt veranderd naar de inhoud van de "body" in Postman.
 
 7. De code voor de API staat in .php bestanden op locatie "C:\xampp\htdocs\dataprocessing\API\app\api"
+
+8. Om de GUI te testen navigeer in de browser naar: api/homepage.php

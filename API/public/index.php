@@ -26,7 +26,6 @@ use Slim\Factory\AppFactory;
 require __DIR__ . '/../vendor/autoload.php';
 
 $app = AppFactory::create();
-
 $app->addBodyParsingMiddleware();
 require_once('../app/api/ore.php');
 require_once('../app/api/biome.php');

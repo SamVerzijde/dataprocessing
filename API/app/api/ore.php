@@ -23,6 +23,8 @@ $app->get('/api/ore', function($request, $response, $args) {
 
 //Display a single row from url
 use Slim\Routing\RouteCollectorProxy;
+use JsonSchema\Validator;
+use JsonSchema\Constraints\Constraint;
 
 $app->group('/ore', function (RouteCollectorProxy $group) {
     $group->get('', function ($request, $response, $args) {
@@ -162,21 +164,32 @@ $app->group('/ore', function (RouteCollectorProxy $group) {
         require_once('dbconnect.php');
 
         $parsedbody = $request->getParsedBody();
+        $validationArray = $request->getBody();
+        $data = json_decode($validationArray);
 
         $id = $request->getAttribute('id');
         var_dump($parsedbody);
 
         if ($dataType[0] == 'application/json') {
-            $ore = $parsedbody['ore'];
-            $tool = $parsedbody['tool'];
-            $abundance = $parsedbody['abundance'];
-            $biome = $parsedbody['biome'];
-            $most_found_in_layers = $parsedbody['most_found_in_layers'];
-            $none_at_or_above = $parsedbody['none_at_or_above'];
-            $rare_on_layers = $parsedbody['rare_on_layers'];
-            $commonly_up_to_layers = $parsedbody['commonly_up_to_layers'];
 
-            $query = "UPDATE ore SET 
+            $validator = new Validator;
+            $validator->validate(
+                $data,
+                (object)['$ref' => 'file://' . realpath('json/ore.json')],
+                Constraint::CHECK_MODE_APPLY_DEFAULTS
+            );
+
+            if ($validator->isValid()) {
+                $ore = $parsedbody['ore'];
+                $tool = $parsedbody['tool'];
+                $abundance = $parsedbody['abundance'];
+                $biome = $parsedbody['biome'];
+                $most_found_in_layers = $parsedbody['most_found_in_layers'];
+                $none_at_or_above = $parsedbody['none_at_or_above'];
+                $rare_on_layers = $parsedbody['rare_on_layers'];
+                $commonly_up_to_layers = $parsedbody['commonly_up_to_layers'];
+
+                $query = "UPDATE ore SET 
             ore = '$ore', 
             tool = '$tool', 
             abundance = '$abundance', 
@@ -187,10 +200,14 @@ $app->group('/ore', function (RouteCollectorProxy $group) {
             commonly_up_to_layers = '$commonly_up_to_layers'
             WHERE id = '$id'";
 
-            $mysqli->query($query);
+                $mysqli->query($query);
 
-            $response->getBody()->write("Staat er in maat");
-            return $response;
+                $response->getBody()->write("Staat er in maat");
+                return $response;
+            } else {
+                $response->getBody()->write("Niet gevalideerd helaas");
+                return $response;
+            }
         } elseif ($dataType[0] == 'application/xml') {
             $xmlValid = new DOMDocument();
             $postmanBody = $request->getBody();
@@ -236,25 +253,40 @@ $app->group('/ore', function (RouteCollectorProxy $group) {
         require_once('dbconnect.php');
 
         $parsedbody = $request->getParsedBody();
+        $validationArray = $request->getBody();
+        $data = json_decode($validationArray);
 
         var_dump($parsedbody);
         if ($dataType[0] == 'application/json') {
-            $ore = $parsedbody['ore'];
-            $tool = $parsedbody['tool'];
-            $abundance = $parsedbody['abundance'];
-            $biome = $parsedbody['biome'];
-            $most_found_in_layers = $parsedbody['most_found_in_layers'];
-            $none_at_or_above = $parsedbody['none_at_or_above'];
-            $rare_on_layers = $parsedbody['rare_on_layers'];
-            $commonly_up_to_layers = $parsedbody['commonly_up_to_layers'];
 
-            $query = "INSERT INTO ore (ore, tool, abundance, biome, most_found_in_layers, none_at_or_above, rare_on_layers, commonly_up_to_layers) VALUES 
+            $validator = new Validator;
+            $validator->validate(
+                $data,
+                (object)['$ref' => 'file://' . realpath('json/ore.json')],
+                Constraint::CHECK_MODE_APPLY_DEFAULTS
+            );
+
+            if ($validator->isValid()) {
+                $ore = $parsedbody['ore'];
+                $tool = $parsedbody['tool'];
+                $abundance = $parsedbody['abundance'];
+                $biome = $parsedbody['biome'];
+                $most_found_in_layers = $parsedbody['most_found_in_layers'];
+                $none_at_or_above = $parsedbody['none_at_or_above'];
+                $rare_on_layers = $parsedbody['rare_on_layers'];
+                $commonly_up_to_layers = $parsedbody['commonly_up_to_layers'];
+
+                $query = "INSERT INTO ore (ore, tool, abundance, biome, most_found_in_layers, none_at_or_above, rare_on_layers, commonly_up_to_layers) VALUES 
             ('$ore', '$tool', '$abundance', '$biome', '$most_found_in_layers', '$none_at_or_above', '$rare_on_layers', '$commonly_up_to_layers')";
 
-            $mysqli->query($query);
+                $mysqli->query($query);
 
-            $response->getBody()->write("Nieuwe row is aangemaakt");
-            return $response;
+                $response->getBody()->write("Nieuwe row is aangemaakt");
+                return $response;
+            } else {
+                $response->getBody()->write("Niet gevalideerd helaas");
+                return $response;
+            }
         } elseif ($dataType[0] == 'application/xml') {
             $xmlValid = new DOMDocument();
             $postmanBody = $request->getBody();
@@ -271,7 +303,7 @@ $app->group('/ore', function (RouteCollectorProxy $group) {
                 $rare_on_layers = $parsedbody->rare_on_layers;
                 $commonly_up_to_layers = $parsedbody->commonly_up_to_layers;
 
-                $query = "INSERT INTO block (ore, tool, abundance, biome, most_found_in_layers, none_at_or_above, rare_on_layers, commonly_up_to_layers) VALUES 
+                $query = "INSERT INTO ore (ore, tool, abundance, biome, most_found_in_layers, none_at_or_above, rare_on_layers, commonly_up_to_layers) VALUES 
             ('$ore', '$tool', '$abundance', '$biome', '$most_found_in_layers', '$none_at_or_above', '$rare_on_layers', '$commonly_up_to_layers')";
 
                 $mysqli->query($query);

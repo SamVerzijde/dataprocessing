@@ -5,9 +5,9 @@
       <xs:sequence>
         <xs:element name="biome" type="xs:string" />
         <xs:element name="block" type="xs:string" />
-        <xs:element name="breaking_time" type="xs:string" />
-        <xs:element name="flammable" type="xs:string" />
-        <xs:element name="renewable" type="xs:string" />
+        <xs:element name="breaking_time" type="xs:double" />
+        <xs:element name="flammable" type="xs:int" />
+        <xs:element name="renewable" type="xs:int" />
         <xs:element name="tool" type="xs:string" />
       </xs:sequence>
     </xs:complexType>

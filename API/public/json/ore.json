@@ -1,0 +1,40 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "ore": {
+            "type": "string"
+        },
+        "tool": {
+            "type": "string"
+        },
+        "abundance": {
+            "type": "string"
+        },
+        "biome": {
+            "type": "string"
+        },
+        "most_found_in_layers": {
+            "type": "string"
+        },
+        "none_at_or_above": {
+            "type": "number"
+        },
+        "rare_on_layers": {
+            "type": "string"
+        },
+        "commonly_up_to_layers": {
+            "type": "number"
+        }
+    },
+    "required": [
+      "ore",
+      "tool",
+      "abundance",
+      "biome",
+      "most_found_in_layers",
+      "none_at_or_above",
+      "rare_on_layers",
+      "commonly_up_to_layers"
+    ]
+}

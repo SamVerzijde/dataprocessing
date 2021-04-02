@@ -5,9 +5,9 @@
       <xs:sequence>
         <xs:element name="abundance" type="xs:string" />
         <xs:element name="biome" type="xs:string" />
-        <xs:element name="commonly_up_to_layers" type="xs:string" />
+        <xs:element name="commonly_up_to_layers" type="xs:int" />
         <xs:element name="most_found_in_layers" type="xs:string" />
-        <xs:element name="none_at_or_above" type="xs:string" />
+        <xs:element name="none_at_or_above" type="xs:int" />
         <xs:element name="ore" type="xs:string" />
         <xs:element name="rare_on_layers" type="xs:string" />
         <xs:element name="tool" type="xs:string" />

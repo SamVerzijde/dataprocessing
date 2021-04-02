@@ -7,8 +7,8 @@ namespace Composer\Autoload;
 class ComposerStaticInit0676cce3c7bf6596708ae1899dac73cc
 {
     public static $files = array (
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
     );
 
@@ -25,6 +25,10 @@ class ComposerStaticInit0676cce3c7bf6596708ae1899dac73cc
             'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
+        ),
+        'J' => 
+        array (
+            'JsonSchema\\' => 11,
         ),
         'F' => 
         array (
@@ -63,6 +67,10 @@ class ComposerStaticInit0676cce3c7bf6596708ae1899dac73cc
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'JsonSchema\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema',
         ),
         'Fig\\Http\\Message\\' => 
         array (

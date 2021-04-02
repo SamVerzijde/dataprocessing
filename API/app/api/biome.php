@@ -23,6 +23,8 @@ $app->get('/api/biome', function($request, $response, $args) {
 
 //Display a single row from url
 use Slim\Routing\RouteCollectorProxy;
+use JsonSchema\Validator;
+use JsonSchema\Constraints\Constraint;
 
 $app->group('/biome', function (RouteCollectorProxy $group) {
     $group->get('', function ($request, $response, $args) {
@@ -163,18 +165,29 @@ $app->group('/biome', function (RouteCollectorProxy $group) {
         require_once('dbconnect.php');
 
         $parsedbody = $request->getParsedBody();
+        $validationArray = $request->getBody();
+        $data = json_decode($validationArray);
 
         $id = $request->getAttribute('id');
         var_dump($parsedbody);
 
         if ($dataType[0] == 'application/json') {
-            $biome = $parsedbody['biome'];
-            $rarity = $parsedbody['rarity'];
-            $temperature = $parsedbody['temperature'];
-            $type = $parsedbody['type'];
-            $blocks = $parsedbody['blocks'];
 
-            $query = "UPDATE biome SET 
+            $validator = new Validator;
+            $validator->validate(
+                $data,
+                (object)['$ref' => 'file://' . realpath('json/biome.json')],
+                Constraint::CHECK_MODE_APPLY_DEFAULTS
+            );
+
+            if ($validator->isValid()) {
+                $biome = $parsedbody['biome'];
+                $rarity = $parsedbody['rarity'];
+                $temperature = $parsedbody['temperature'];
+                $type = $parsedbody['type'];
+                $blocks = $parsedbody['blocks'];
+
+                $query = "UPDATE biome SET 
             biome = '$biome', 
             rarity = '$rarity', 
             temperature = '$temperature', 
@@ -182,23 +195,27 @@ $app->group('/biome', function (RouteCollectorProxy $group) {
             blocks = '$blocks'
             WHERE id = '$id'";
 
-            $mysqli->query($query);
+                $mysqli->query($query);
 
-            $response->getBody()->write("Staat er in maat");
-            return $response;
+                $response->getBody()->write("Staat er in maat");
+                return $response;
+            } else {
+                $response->getBody()->write("Niet gevalideerd helaas");
+                return $response;
+            }
         } elseif ($dataType[0] == 'application/xml') {
             $xmlValid = new DOMDocument();
             $postmanBody = $request->getBody();
             $xmlValid->loadXML($postmanBody);
 
-            
-            $biome = $parsedbody->biome;
-            $rarity = $parsedbody->rarity;
-            $temperature = $parsedbody->temperature;
-            $type = $parsedbody->type;
-            $blocks = $parsedbody->blocks;
+            if ($xmlValid->schemaValidate("xsd/biome.xsd")) {
+                $biome = $parsedbody->biome;
+                $rarity = $parsedbody->rarity;
+                $temperature = $parsedbody->temperature;
+                $type = $parsedbody->type;
+                $blocks = $parsedbody->blocks;
 
-            $query = "UPDATE biome SET 
+                $query = "UPDATE biome SET 
             biome = '$biome', 
             rarity = '$rarity', 
             temperature = '$temperature', 
@@ -206,10 +223,14 @@ $app->group('/biome', function (RouteCollectorProxy $group) {
             blocks = '$blocks'
             WHERE id = '$id'";
 
-            $mysqli->query($query);
+                $mysqli->query($query);
 
-            $response->getBody()->write("Staat er in maat");
-            return $response;
+                $response->getBody()->write("Staat er in maat");
+                return $response;
+            } else {
+                $response->getBody()->write("Niet gevalideerd helaas");
+                return $response;
+            }
         } else {
             $response->getBody()->write("Hier is niks te vinden");
             return $response;
@@ -221,22 +242,37 @@ $app->group('/biome', function (RouteCollectorProxy $group) {
         require_once('dbconnect.php');
 
         $parsedbody = $request->getParsedBody();
+        $validationArray = $request->getBody();
+        $data = json_decode($validationArray);
 
         var_dump($parsedbody);
         if ($dataType[0] == 'application/json') {
-            $biome = $parsedbody['biome'];
-            $rarity = $parsedbody['rarity'];
-            $temperature = $parsedbody['temperature'];
-            $type = $parsedbody['type'];
-            $blocks = $parsedbody['blocks'];
 
-            $query = "INSERT INTO biome (biome, rarity, temperature, type, blocks) VALUES 
+            $validator = new Validator;
+            $validator->validate(
+                $data,
+                (object)['$ref' => 'file://' . realpath('json/biome.json')],
+                Constraint::CHECK_MODE_APPLY_DEFAULTS
+            );
+
+            if ($validator->isValid()) {
+                $biome = $parsedbody['biome'];
+                $rarity = $parsedbody['rarity'];
+                $temperature = $parsedbody['temperature'];
+                $type = $parsedbody['type'];
+                $blocks = $parsedbody['blocks'];
+
+                $query = "INSERT INTO biome (biome, rarity, temperature, type, blocks) VALUES 
             ('$biome', '$rarity', '$temperature', '$type', '$blocks')";
 
-            $mysqli->query($query);
+                $mysqli->query($query);
 
-            $response->getBody()->write("Nieuwe row is aangemaakt");
-            return $response;
+                $response->getBody()->write("Nieuwe row is aangemaakt");
+                return $response;
+            } else {
+                $response->getBody()->write("Niet gevalideerd helaas");
+                return $response;
+            }
         } elseif ($dataType[0] == 'application/xml') {
             $xmlValid = new DOMDocument();
             $postmanBody = $request->getBody();
