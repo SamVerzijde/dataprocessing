@@ -19,7 +19,7 @@ Voeg in dit bestand tussen de regels "127.0.0.1 localhost" en "::1 localhost" ee
 
 4. Navigeer naar "api/phpmyadmin" of "localhost/phpmyadmin". Importeer hier het .sql bestand dat op locatie "C:\xampp\htdocs\dataprocessing\README\DATABASE" staat.
 
-5. Open POSTMAN en importeer het viertal .postman_collection.json bestanden uit map "C:\xampp\htdocs\dataprocessing\README\Postman Collections".
+5. Open POSTMAN en importeer het .postman_collection.json bestand uit map "C:\xampp\htdocs\dataprocessing\README\Postman Collections".
 
 6. Vanuit Postman kan de API nu gebruikt worden. De collection "DELETE" wordt aangedreven door een "ID" mee te geven welke linkt naar de Database.
 Collection "GET" wordt enkel op het "ID" aangedreven bij requests waar /1 achter staat. Alle overige GET requests geven alle resultaten van de database weer.
